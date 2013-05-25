@@ -1,0 +1,18 @@
+# ignored dirs
+tmp
+.DS_Store
+
+# ignored files
+*.pyc
+.nfs*
+*.orig
+*.~
+*.BAK
+*.swp
+*.swo
+*.pid
+*.sublime-workspace
+._*
+
+# sqlite3 db file
+*.db
