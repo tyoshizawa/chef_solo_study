@@ -1,6 +1,7 @@
 {
   "run_list":[
     "python",
-    "base"
+    "base",
+    "pip_base"
   ]
 }
