@@ -1,0 +1,6 @@
+# set hostname
+echo "rabbit01" > /etc/hostname
+hostname -F /etc/hostname
+
+# start rabbitmq-server
+service rabbitmq-server start
