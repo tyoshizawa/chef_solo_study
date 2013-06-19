@@ -1,0 +1,26 @@
+" 行番号を表示
+:set number
+
+" オートインデントする
+:set autoindent
+
+" シンタックスハイライトを有効にする
+:syntax on
+
+" 行頭と行末とで移動できるようにする
+:set whichwrap=b,s,h,l,<,>,[,]
+
+" タブ幅を設定する
+:set tabstop=4
+:set softtabstop=4
+:set shiftwidth=4
+
+" 各種の空白文字を表示する
+:set list
+:set listchars=tab:&#187;-,eol:&#8626;,extends:&#187;,precedes:&#171;,nbsp:%
+
+" 編集中のファイル名を表示する
+:set title
+
+" モードを表示する
+:set showmode

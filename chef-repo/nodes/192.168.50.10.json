@@ -1,0 +1,9 @@
+{
+  "base": {
+    "main_user": "vagrant"
+  },
+
+  "run_list": [
+    "role[RabbitMQ]"
+  ]
+}

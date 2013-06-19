@@ -30,10 +30,10 @@ bash "rabbitmq_setting" do
   user "root"
   not_if { ::File.exists?(flag_file) }
   code <<-EOH
-  rabbitmqctl add_user rabbit password
+  rabbitmqctl add_user rabbit rabbit
   rabbitmqctl delete_user guest
-  rabbitmqctl add_vhost /vhost
-  rabbitmqctl set_permissions -p /vhost rabbit ".*" ".*" ".*"
+  rabbitmqctl add_vhost /vmhost
+  rabbitmqctl set_permissions -p /vmhost rabbit ".*" ".*" ".*"
   touch #{flag_file} 
   EOH
 end

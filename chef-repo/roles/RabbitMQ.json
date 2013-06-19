@@ -1,0 +1,14 @@
+{
+  "name": "RabbitMQ",
+  "default_attributes": {
+    "rc": {"rabbitmq_order": "10"},
+    "base": {"machine_name": "RabbitMQ"}
+  },
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+
+  "run_list": [
+    "recipe[base]",
+    "recipe[rabbitmq]"
+  ]
+}

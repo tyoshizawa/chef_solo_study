@@ -1,6 +1,7 @@
 # ignored dirs
 tmp
 .DS_Store
+.vagrant
 
 # ignored files
 *.pyc

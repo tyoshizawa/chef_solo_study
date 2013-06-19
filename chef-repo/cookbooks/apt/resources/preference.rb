@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: yum
-# Recipe:: default
+# Cookbook Name:: apt
+# Resource:: preference
 #
-# Copyright 2013, Opscode, Inc.
+# Copyright 2010-2011, Opscode, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,12 +17,14 @@
 # limitations under the License.
 #
 
-require File.expand_path('../support/helpers', __FILE__)
+actions :add, :remove
 
-describe "yum::default" do
-  include Helpers::YumTest
-
-  it "Default recipe does nothing, so default_test does nothing" do
-    skip "Default recipe does nothing so default test does nothing"
-  end
+def initialize(*args)
+  super
+  @action = :add
 end
+
+attribute :package_name, :kind_of => String, :name_attribute => true
+attribute :glob, :kind_of => String
+attribute :pin, :kind_of => String
+attribute :pin_priority, :kind_of => String
