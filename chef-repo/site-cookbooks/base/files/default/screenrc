@@ -11,20 +11,10 @@ caption always "%{= wk}  %-w%{=bu dr}%n %t%{-}%+w %= %{= wk} %H "
 
 bind l windowlist
 bind n screen
-bind ^i next
 bind 0 remove
 bind 1 only
 bind 2 split
-bind o focus
-bind ^o focus
-bind \^ resize
-# bind -c REGION 0 remove
-# bind -c REGION 1 only
-# bind -c REGION 2 split
-# bind -c REGION o focus
-# bind -c REGION \^ resize
-# bind ^x command -c REGION
-
+bind ^w focus
 
 # BackSpace
 bindkey -k kD stuff \010
